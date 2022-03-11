@@ -1,0 +1,128 @@
+umang
+1953
+santbi 201412
+printer
+\\in-gur-svv-0008
+INGURWSLC6SFQF2 
+
+archanaITR-India@123
+
+ford:
+010101000026520
+
+WFH request -> REQ224690 
+
+Eagle eye
+username = SantoshB
+India@1234
+
+chaalan -> 34581990
+
+Policy Issue: HRC0017983- canceled
+HRC0017984
+
+UAN
+100018711957
+MH/PUN/306641/000238
+BHQPB8250B
+aadhar
+927009109043
+Edistrict
+8585960674
+Gb$k6Pnp
+````````````````````````
+person no- 201412
+
+pypayrole - India123
+company code- 2084
+user Name - 201412
+
+kwench-
+India*123
+
+https://portal.myvantageconnect.co.in/#/Home
+San@san11
+
+Hdfc
+04851140327312
+HDFC0000485
+
+kaza
+santoshbisht87
+india@123
+
+card payment
+IB10163128319827
+
+github
+hssh@1987
+
+madhavi sharma
+
+git 
+hBSUyyLTKt5sSERsYM92
+00c2140d29a95956d7e34d7e05c9d0
+
+digilocker - 945632
+
+02267866013
+
+India@qazplm123
+
+
+-------------------------------------------------------
+
+Adding python path
+--conf spark.yarn.appMasterEnv.PYSPARK_DRIVER_PYTHON=/dhcommon/dhpython/python/bin/python2.7
+
+--conf spark.yarn.appMasterEnv.PYSPARK_PYTHON=/dhcommon/dhpython/python/bin/python2.7
+
+Spark - handy code
+sqlContext.read.parquet('/path/to/file/file.parq')
+sqlContext.setConf("spark.sql.parquet.binaryAsString", "true") 
+#Create a DF
+l = [('Alice', 1)]
+df = sqlContext.createDataFrame(l, ['name', 'age'])
+df.withColumn('age2', df.age + 2).collect()
+#Create a df by explicity defining types and using a list of tuples
+from pyspark.sql.types import *
+from pyspark.sql import Row
+schema = StructType([StructField("foo", StringType(), True)])
+l = [('bar')]
+rdd = sc.parallelize(l).map (lambda x: Row(x))
+df = sqlContext.createDataFrame(rdd, schema)
+df.show()
+#Create a df by explicity defining types and using a list of tuples even if there is only one column
+from pyspark.sql.types import *
+schema = StructType([StructField("foo", StringType(), True)])
+l = [('bar',)]
+df = sqlContext.createDataFrame(l, schema)
+df.show()
+#This works too
+from pyspark.sql.types import *
+schema = StructType([StructField("foo", StringType(), True)]) 
+l = [('bar',)]
+df = sqlContext.createDataFrame(l, schema)
+df.show()
+df = self.sqlContext.createDataFrame(
+    [('Beans', 'JohnD', 'Brook Green', 'Online')],
+    StructType(
+        [StructField("Product", StringType(), True), StructField("Customer", StringType(), True),
+         StructField("Store", StringType(), True), StructField("Channel", StringType(), True)]
+    )
+)
+from pyspark.sql import Row
+df = sc.parallelize([Row(name='Alice', age=5, height=80), Row(name='Alice', age=5, height=80),
+                     Row(name='Alice', age=10, height=80)]).toDF()
+#reloading a module
+import sys
+sys.path.append('/home/jamiet/pyspark-0.0.0-py2.7.egg')
+import dunnhumby.cmp_features.featureswriter as ft
+reload(ft)
+
+CMP = Customer Management Platform
+CDM = Common Data Model
+BDA = Big Data Appliance
+EAN = European Artical number
+SKU = store keeping Unit
+UPC = Unique Product Code
